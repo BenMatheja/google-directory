@@ -21,14 +21,7 @@ module GoogleDirectory
       @config_dir ||= find_directory(:config_dir)
     end
 
-    # def load!
-    #   YAML.load_file(config_dir + '/config.yml')[env].each do |(attr,value)|
-    #     send "#{attr}=".to_sym, value
-    #   end
-    # end
-
     private
-
     # recursively search upwards for a directory, unless '/' is reached
     def find_directory(name, current = Pathname.new('.'))
       raise "Cannot find directory #{name}" if current.expand_path.root?

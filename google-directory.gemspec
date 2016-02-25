@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ['Ben Matheja']
   s.email = ['ben.matheja@zweitag.de']
   s.homepage = 'http://www.zweitag.de/'
-  s.summary = 'Returns Users and Groups of GoogleDirectory'
+  s.summary = 'Returns Users from Google Directory'
   s.description = s.summary
   s.bindir = 'bin'
   s.executables = ['users']
