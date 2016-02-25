@@ -4,7 +4,7 @@ require 'json'
 module GoogleDirectory
   class User
 
-    private_class_method :new
+    #private_class_method :new
 
     def self.fetch
       new.tap do |instance|
@@ -17,7 +17,7 @@ module GoogleDirectory
     end
 
     def users
-      puts api.users.users
+      api.users.users
     end
  
   end
