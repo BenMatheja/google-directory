@@ -18,7 +18,7 @@ module GoogleDirectory
     end
 
     def config_dir
-      @config_dir ||= find_directory(CONFIG_DIR)
+      @config_dir ||= find_directory(:config_dir)
     end
 
     # def load!

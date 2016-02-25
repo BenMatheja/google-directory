@@ -8,7 +8,6 @@ module GoogleDirectory
 
     def self.fetch
       new.tap do |instance|
-        instance.groups
         instance.users
       end
     end
@@ -20,7 +19,7 @@ module GoogleDirectory
     def users
       puts api.users.users
     end
-    
+ 
   end
 end
 
