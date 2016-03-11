@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
 
   s.add_dependency 'google-api-client', '~> 0.8.6'
-  s.add_dependency 'mime-types', '~> 1.19.0'
+  s.add_dependency 'mime-types'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- spec/*`.split("\n")
