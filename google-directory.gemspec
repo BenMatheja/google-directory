@@ -14,7 +14,8 @@ Gem::Specification.new do |s|
   s.executables = ['users']
   s.has_rdoc = false
 
-  s.add_dependency 'google-api-client', '~> 0.8.6'
+  s.add_dependency 'google-api-client', '~> 0.6.2'
+  s.add_dependency 'jwt', '~> 0.1.4'
   s.add_dependency 'mime-types'
 
   s.files         = `git ls-files`.split("\n")
