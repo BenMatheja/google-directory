@@ -17,7 +17,7 @@ module GoogleDirectory
     end
 
     def members(id)
-      members = api.members(id).members
+      members = api.members(id).members.map!{|member| member['id']}
       users = users()
       users.each do |u|
         if ! members.include?(u['id'])
